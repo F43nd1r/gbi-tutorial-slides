@@ -1,5 +1,24 @@
 \section{Formale Sprachen – Aufgaben}
 
+
+\begin{frame}{Aufgabe}
+	Es sei $A = \{\word a, \word b\}$. Beschreibt die folgenden formalen Sprachen mit den Symbolen $\word\{, \word\}, \word a, \word b, \textcolor{blue}{\eps}, 
+	\mword{\cup}, 
+	\mword{{}^*}, \mword{{}^+},
+	\word, , \mword{\cdot} , \word( \text{ und } 
+	\word)
+	$:
+	\begin{itemize}
+		\item die Menge aller Wörter über $A$, die das Teilwort \word{ab} enthalten. \\
+		\uncover<2-|handout:2>{$\{\word a, \word b\}^\ast \cdot \{\word{ab}\} \cdot \{\word a, \word b\}^\ast$}
+		\item die Menge aller Wörter über $A$, deren vorletztes Zeichen ein \word b ist. \\
+		\uncover<3-|handout:2>{$\{\word a, \word b\}^\ast \cdot \{\word b\} \cdot \{\word a, \word b\}$}
+		% $\{\word a, \word b\}^\ast \cdot \{\word b\} \cdot \{\word a, \word b\}$
+		\item die Menge aller Wörter über $A$, in denen nirgends zwei \word bs unmittelbar hintereinander vorkommen. \\
+		\uncover<4-|handout:2>{$\{\word a, \word{ba}\}^\ast \cdot \{ \word b, \eps \}$}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Beispiel}
 	Sei $A = \set{\word a,\word b}$ ein Alphabet. Mit $L$ wollen wir alle Wörter beschreiben, die genau ein $\word b$ enthalten. \\ \pause
 	$$ L = \set{w_1 \word b w_2 \mid w_1, w_2 \in \{\word a\}^\ast } = \{\word a\}^\ast \cdot \{\word b \} \cdot \{\word a\}^\ast$$
@@ -33,7 +52,7 @@
 				$$L^\ast \cdot L = L^+ $$ 
 	\end{itemize}
 
-	Tipp zu (2) (nicht in der Klausur gegeben): Hier handelt es sich um eine Mengengleichheit, also brav mit \enquote{$\subseteq$} und \enquote{$\supseteq$} beweisen! \smiley 
+	Tipp zu (2) (nicht in der Klausur gegeben): Hier handelt es sich um eine Mengengleichheit, also \enquote{$\subseteq$} und \enquote{$\supseteq$} beweisen!
 \end{frame}
 
 \begin{frame}[t]{Lösung}
