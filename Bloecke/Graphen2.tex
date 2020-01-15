@@ -115,30 +115,3 @@ Verwende Matrix $A \in \{0, 1\}^{n \times n}$ \ mit \ $A_{ij} = 1 \gdw (i, j) \i
 %		\includegraphics[width=\textwidth]{adjazenzmatrix}
 %	\end{figure}
 \end{frame}
-
-\begin{frame}{Exkurs: Vergleich der Darstellungen}
-	\begin{itemize}[<+->]
-		\item Adjazenzliste: Speicherplatz abhängig von Anzahl der Kanten ($m$)\\
-		Besser bei dünn besetzten Graphen. 
-		\item Adjazenzmatrix: Immer gleich viel Speicherplatz ($n^2$)\\
-		Besser bei dicht besetzten Graphen (kein Overhead für Listen nötig).
-	\end{itemize}
-\end{frame}
-
-
-\begin{frame}{Exkurs: Vergleich der Darstellungen}
-	% ACHTUNG: Leute hatten hier vllt. noch kein O-Kalkül in der VL, beware!
-	\begin{itemize}[<+->]
-		\item Adjazenzliste: Nachbarn ermitteln in $O(1)$\\
-		Ermitteln ob $(i,j)$ adjazent sind in $O(n)$
-		\item Adjazenzmatrix: Nachbarn ermitteln in $O(n)$\\
-		Ermitteln ob $(i,j)$ adjazent sind in $O(1)$
-	\end{itemize}
-
-	\pause
-	In der Praxis meistens (Varianten von) Adjazenzlisten verwendet.\\
-	Denn: Die meisten Graphalgorithmen traversieren den Graphen, dafür sind Adjazenzlisten deutlich besser.
-	
-	\bigskip
-	Viel mehr dazu in Algorithmen~I
-\end{frame}
