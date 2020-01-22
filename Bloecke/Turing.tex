@@ -48,7 +48,7 @@
 		;
 		\end{tikzpicture}
 	\end{center} \pause
-	Macht genau dasselbe wie der Automat ausm letzten Tut. \\ \pause
+	Macht genau dasselbe wie der Automat von vorhin. \\ \pause
 	\begin{tabular}{rl@{\ \?>\ }rl}
 		Zustand vorher: & a &  nachher: & \hphantom{\word{100010}}a \\
 		Band vorher: &\word{011101} &  nachher:&  \word{100010}$\9$\\
@@ -514,17 +514,4 @@
 	\end{Definition} \pause
 	
 	Bei aufzählbaren Sprachen ist nicht definiert, wie sich die TM für Wörter $ w \notin L$ verhält. Sie kann diese ablehnen oder nicht halten. Ob eine TM für eine Eingabe nicht hält, können wir \enquote{von außen} nicht einfach feststellen.
-\end{frame}
-
-
-\begin{frame}{Aufgabe}
-	Entwerft eine Turingmaschine, die die Sprache $ \{\word 0^k\word 1^k \mid k\in \N_0 \} $ akzeptiert.
-	% TODO Lösung
-\end{frame}
-
-\begin{frame}{Aufgabe}
-	Entwerft eine TM, die alle gültigen Klammerausdrücke entscheidet.\\
-	\medskip
-	Gültige Klammerausdrücke werden dabei von der folgenden Grammatik produziert: $ G = (\{S\},\{\word (, \word )\}, S, P )$ mit den Produktionen $\set{ S \to \eps \mid \word (S\word )S}$.
-	% TODO Lösung
 \end{frame}

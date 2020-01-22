@@ -12,16 +12,6 @@
 	Die gültigen \enquote{Zustandswechsel} sind als Zustandsübergänge definiert.
 \end{frame}
 
-\begin{frame}{Anwendungen}
-	\begin{itemize}
-		\item Getränkeautomaten
-		\item Textsuche
-		\item Textersetzung
-	\end{itemize}
-
-	Für Beispiele zur Textsuche und Textersetzung: Übung~12, WS~15/16
-\end{frame}
-
 \mycomment{ % As a source for copy/pasting:
 \begin{tikzpicture}[->,>=stealth,shorten >=1pt,auto,node distance=2.8cm,
 semithick,initial text={}]
@@ -90,11 +80,11 @@ semithick,initial text={}]
 \begin{frame}{}
 	\begin{block}{Graphische Darstellung}
 		\begin{itemize}
-			\item Oft malt man Automaten hin. (Achtung: Die formale Schreibweise wird trotzdem auch im Studium verwendet! Also auswendig lernen!)
+			\item Oft malt man Automaten hin.
 			\item Zustände sind \textbf{Knoten} und Übergänge sind \textbf{gerichtete Kanten} in einem Graphen. \\
 			Kanten\textbf{beschriftung}: „$\langle\text{Eingabe}\rangle | \langle\text{Ausgabe}\rangle$“
 			\item \textbf{Der Startzustand wird mit einem Pfeil \enquote{aus dem Nichts} gekennzeichnet!}  \pause
-			\implitem \textbf{NICHT VERGESSEN!} Kostet sonst Punkte! \textbf{Immer!}
+			\implitem \textbf{Nicht vergessen!} Kostet sonst Punkte
 		\end{itemize}
 		
 	\end{block}
@@ -155,16 +145,6 @@ semithick,initial text={}]
 	\pause Was macht diese Funktion? \\ \pause
 	Diese Funktion gibt die Reihe aller \textbf{Zustände als Gesamtwort} aus, die der Automat bei Eingabe des Wortes $w$ im Startzustand $z$ durchläuft. Also: 
 	$$ f_{**}(z, w) = z \* z_1 \* z_2 \cdots z_\text{ende} $$
-\end{frame}
-
-\begin{frame}{Eingabe eines Wortes}		
-	Alternative Definition:
-	\begin{block}{Zustandsübergangsfunktion extended extended}
-		\begin{align*}
-			f_{**}(z,\varepsilon) &= z \\
-			\forall w \in X^* \ \forall x \in X : f_{**}(z,wx) &= f_{**}(z,w)\cdot f(f_*(z,w),x)	 
-		\end{align*}
-	\end{block}
 \end{frame}
 
 \begin{frame}{Beispiel $f, f_*, f_{**}$}
