@@ -20,10 +20,6 @@
 	Eine solche Sprache nennen wir \textbf{regulär}.
 \end{frame}
 
-\begin{frame}{Beispiele für Umwandlungen}
-	Siehe Übung 13, WS 15/16
-\end{frame}
-
 \begin{frame}{Beispiele}
 	$G = (\{X\}, \{\word a, \word b\}, X, P )$ mit 
 	$$P = \set{X \to \word aX \mid \word{ba}X \mid \word b \mid \varepsilon }$$
@@ -32,7 +28,7 @@
 	ist eine rechtslineare Grammatik. Die dadurch erzeugte Sprache ist \pause 
 	$$L(G) = \set{ w \Mid \forall v_1, v_2 \in \{\word a,\word b\}^\ast: w \neq v_1 \word{bb} v_2 },$$ 
 	der sie beschreibende reguläre Ausdruck ist \pause 
-	$$R =  \rx{(a|ba)*(b|O*)}.  $$ 
+	$$R =  \rx{(a|ba)*(b|O)}.  $$ 
 	Der Automat dazu sieht so aus: \\ \pause
 	\centering
 	\begin{tikzpicture}[->,>=stealth,shorten >=1pt,auto,semithick,node distance=2cm,initial text={}]
